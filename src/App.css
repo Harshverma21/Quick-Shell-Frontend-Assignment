@@ -1,0 +1,102 @@
+/* Enhanced App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, .app {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif, 'Noto Color Emoji', 'Segoe UI Symbol', 'Apple Color Emoji';
+  background-color: #0a0a0a;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #edf2f7;
+  color: #0f0e0e;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Display Box inside Navbar */
+.display-box {
+  padding: 0.5rem 1rem;
+  background-color: #0056b3;
+  border-radius: 4px;
+  color: #121212;
+  font-weight: bold;
+}
+
+/* Main Content */
+.content {
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+}
+
+/* Responsive adjustments */
+
+/* Small screens: 576px and below */
+@media (max-width: 576px) {
+  body, .app {
+    font-size: 14px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+  }
+  .display-box {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
+
+/* Medium screens: 768px and below */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  .display-box {
+    font-size: 0.9rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
+
+/* Large screens: 992px and above */
+@media (min-width: 992px) {
+  .content {
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Extra-large screens: 1200px and above */
+@media (min-width: 1200px) {
+  body, .app {
+    font-size: 18px;
+  }
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
+  .content {
+    padding: 3rem 2.5rem;
+  }
+}

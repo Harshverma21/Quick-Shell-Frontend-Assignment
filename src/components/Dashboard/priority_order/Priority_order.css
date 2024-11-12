@@ -1,0 +1,111 @@
+.padding {
+  padding : 1rem;
+}
+
+.grid-container{
+  display: grid ;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); 
+  gap: 1rem;
+  }
+
+  .flex-container {
+    display: flex; 
+  margin-bottom: 1rem; 
+  justify-content: space-between; 
+  align-items: center; 
+  }
+
+  .flex-container1 {
+    display: flex;
+  align-items: center; 
+  gap: 0.75rem;
+  }
+
+  .font {
+    font-weight: 600;
+  }
+
+  .text-color {
+    color: rgb(107 114 128);
+  }
+
+    .options {
+    display: flex; 
+    gap: 0.25rem; 
+    align-items: center; 
+  }
+
+  .img5 {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+  }
+
+
+
+
+  .ticket {
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    margin-bottom: 0.75rem;
+    border-width : 1px;
+    border-radius: 0.25rem;
+    border-color: #D3D3D3;
+    border-style: solid;
+    margin-top: 0.5rem;
+  }
+
+  .fontw {
+    font-size: 0.75rem; /* 14px */
+line-height: 1rem; /* 20px */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .card-child {
+    border-width : 1px;
+    border-radius: 0.25rem;
+    border-color: #D3D3D3;
+    border-style: solid;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    aspect-ratio: 1 / 1;
+  }
+
+  .card2 {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    border-width : 1px;
+    border-radius: 0.25rem;
+    border-color: #D3D3D3;
+    border-style: solid;
+    padding: 0.25rem;
+  }
